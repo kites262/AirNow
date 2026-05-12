@@ -1,0 +1,1 @@
+export const WEATHER_PROVIDER = Symbol('WEATHER_PROVIDER');

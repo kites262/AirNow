@@ -1,0 +1,10 @@
+@baseUrl = http://localhost:3000/api
+
+### 获取仪表盘数据
+POST {{baseUrl}}/dashboard
+Content-Type: application/json
+
+{
+    "latitude": 39.0,
+    "longitude": 116.0
+}

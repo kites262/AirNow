@@ -1,0 +1,21 @@
+{
+  "name": "airnow",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.33.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"pnpm --filter @airnow/server dev\" \"pnpm --filter @airnow/web dev\"",
+    "dev:server": "pnpm --filter @airnow/server dev",
+    "dev:web": "pnpm --filter @airnow/web dev",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^6.0.0"
+  }
+}

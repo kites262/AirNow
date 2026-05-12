@@ -1,0 +1,4 @@
+@baseUrl = http://localhost:3000/api
+
+### 进行健康状态检查
+GET {{baseUrl}}/health
